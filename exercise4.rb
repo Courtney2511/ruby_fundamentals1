@@ -1,19 +1,33 @@
 num = 0
 
-loop do
-  num += 1
+# loop do
+#   num += 1
+#
+#   if ((num%3 == 0) && (num%5 == 0)) == true
+#     puts "BitMaker"
+#   elsif (num%3) == 0
+#       puts "Bit"
+#   elsif (num%5) == 0
+#       puts "Maker"
+#   else
+#     puts num
+#   end
+#
+#   if num == 100
+#     break
+#   end
+# end
 
-  if ((num%3 == 0) && (num%5 == 0)) == true
-    puts "BitMaker"
-  elsif (num%3) == 0
-      puts "Bit"
-  elsif (num%5) == 0
-      puts "Maker"
-  else
-    puts num
-  end
+(1..100).each do |number|
 
-  if num == 100
-    break
-  end
+  if ((number % 3 == 0) && (number % 5 == 0))
+     puts "BitMaker"
+   elsif (number % 3 == 0)
+       puts "Bit"
+   elsif (number % 5 == 0)
+       puts "Maker"
+   else
+     puts number
+   end
+
 end
